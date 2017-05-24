@@ -1,0 +1,12 @@
+extends fluffy.pug
+
+mixin image(name, caption)
+  figure
+    img(src=name)
+    figcaption= caption
+
+block content
+  - var pageTitle = "Fluffy"
+  - var pageCaption = "A cute pug for you"
+    include coat-blurb.pug
+    +image("http://lorempicsum.com/futurama/350/200/1", "bender")
