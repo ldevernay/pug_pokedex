@@ -1,0 +1,6 @@
+- var pokemon = datasource('pokedex.json')
+
+each entry in pokemon.pokemon
+  .pokemon
+    h2  #{entry.num} #{entry.name}
+    img(src=entry.img)
